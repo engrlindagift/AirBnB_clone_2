@@ -24,7 +24,7 @@ def text(text):
 
 
 @app.route('/python/(<text>)', strict_slashes=False)
-def write(text='is cool'):
+def moretext(text='is cool'):
     """A funtion that returns a text variable"""
     return 'Python {}'.format(text.replace('_', ' '))
 

@@ -23,8 +23,8 @@ def text(text):
     return 'C {}'.format(text.replace('_', ' '))
 
 
-@app.route('/python/<text>', strict_slashes=False)
-def text(text='is cool'):
+@app.route('/python/(<text>)', strict_slashes=False)
+def write(text='is cool'):
     """A funtion that returns a text variable"""
     return 'Python {}'.format(text.replace('_', ' '))
 

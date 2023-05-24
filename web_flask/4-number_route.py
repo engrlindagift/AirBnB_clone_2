@@ -23,8 +23,7 @@ def text(text):
     return 'C {}'.format(text.replace('_', ' '))
 
 
-@app.route('/python', strict_slashes=False)
-@app.route('/python/<text>', strict_slashes=False)
+@app.route('/python/(<text>)', strict_slashes=False)
 def moretext(text='is cool'):
     """A funtion that returns a text variable"""
     return 'Python {}'.format(text.replace('_', ' '))

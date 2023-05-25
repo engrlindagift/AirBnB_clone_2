@@ -10,7 +10,7 @@ using the function deploy:
     from fabric.api import put
     from fabric.api import run
 
-    env.hosts = ["100.25.144.66", "54.157.191.121"]
+    env.hosts = ["54.234.79.208", "100.25.2.197"]
 
 def do_pack():
     """Create a tar gzipped archive of the directory web_static."""
